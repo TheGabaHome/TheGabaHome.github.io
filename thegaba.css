@@ -4,7 +4,7 @@
 }
 .wrapper    {
     display: grid;
-    grid-template-columns: 30% 30% 30% 30%;
+    grid-template-columns: 26% 26% 26% 25%;
     border: 3px solid;
     padding: 20px;
     margin: 20px;   
