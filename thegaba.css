@@ -1,63 +1,82 @@
 .body{
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 .wrapper    {
-    display: grid;
-    grid-template-columns: 26% 26% 26% 25%;
-    border: 3px solid;
-    padding: 20px;
-    margin: 20px;   
+  display: grid;
+  grid-template-columns: 26% 26% 26% 25%;
+  border: 3px solid;
+  padding: 20px;
+  margin: 20px;   
 } 
 
 .wrapper div{
-    padding:  1em;
-    }  
+  padding:  1em;
+  }  
 .wrapper ol,ul{
-    padding: 0;
-    list-style: square;
-    list-style-type: none;
+  padding: 0;
+  list-style: square;
+  list-style-type: none;
 }
 h1 {
-    text-align: center;             
+  text-align: center;             
 }
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 li :hover {
-    color: red;
+  color: red;
 }
 .W1{
-    border: 1px #ccc solid ;
-    padding:10px;
-    border-radius: 15px;
-    width: 80%;
+  border: 1px #ccc solid ;
+  padding:10px;
+  border-radius: 15px;
+  width: 80%;
 }
 .W2{
-    border: 1px #ccc solid ;
-    padding:10px;
-    border-radius: 15px;
-    width: 80%;
+  border: 1px #ccc solid ;
+  padding:10px;
+  border-radius: 15px;
+  width: 80%;
 }
 .W3{
-    border: 1px #ccc solid ;
-    padding:10px;
-    border-radius: 15px;
-    width: 80%;
+  border: 1px #ccc solid ;
+  padding:10px;
+  border-radius: 15px;
+  width: 80%;
 }
 .W4{
-    border: 1px #ccc solid ;
-    padding:10px;
-    border-radius: 15px;
-    width: 80%;
+  border: 1px #ccc solid ;
+  padding:10px;
+  border-radius: 15px;
+  width: 80%;
 }
 .bridge {
-    display: block; width: 50%; height: 100%;
-    object-position: right top;
+  display: block; width: 50%; height: 100%;
+  object-position: right top;
 }
 .thegaba {
-    display: block; width: 50%; height: 100%;
-    object-position: right top;
+  display: block; width: 50%; height: 100%;
+  object-position: right top;
+}
+.tag {
+  display: inline-block;
+  /* border: 1px solid black; */
+  border-radius: 30px;
+  width: 35px;
+  text-align: center;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  padding: 2px;
+  font-size: 13px;
+}
+.kr {
+  color: white;
+  background-color: #6638B6;
+}
+.en {
+  color: white;
+  background-color: #EC2A23;
 }
