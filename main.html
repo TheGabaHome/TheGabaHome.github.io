@@ -1,563 +1,159 @@
 <!DOCTYPE html>
-<html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>두근두근 CS진상 길들이기</title>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <script src="https://kit.fontawesome.com/9fc8afa030.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CS 간편복사.css" />
-    <script type="text/javascript" src="CS 간편복사.js"></script>
-  </head>
-
-  <body>
-    <header>
-      <div class="flex_box">
-        <div class="title">
-          <h1>CS 간단 복사</h1>
+<html> 
+<head>
+    <title>The GABA</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"
+          href="https://TheGabaHome.github.io/thegaba.css">
+    <script src="https://TheGabaHome.github.io/thegaba.js"></script>
+</head>
+<body>
+<div class="The GABA">
+    <img src=https://static.wixstatic.com/media/9db3e8_7332ec97e32942dcb3d3e6943a77cdcc~mv2.png/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01/131231.webp
+      alt="The GABA" width="150" height="150"> 
+</div>
+    <h1><a href="https://www.thegaba.net/">THE GABA</a></h1>
+        <div id="txt">
+            <input type=button value="현재 시간" onclick=alert(startTime())>
         </div>
-        <div class="go_btn">
-          <a
-            class="papago"
-            href="https://papago.naver.com/?sk=auto&tk=ko"
-            target="_blank"
-          >
-            파파고 바로가기
-          </a>
-          <a
-            class="g_sheet"
-            href="https://docs.google.com/spreadsheets/d/1oh_WlG6NxzvNVbooJ0jwtp3wT37XbG8sJQ3xJ05iPBE/edit#gid=1804189692"
-            target="_blank"
-          >
-            유통기한 보러가기
-          </a>
-          <a
-            class="boxhero"
-            href="https://web.boxhero-app.com/team/142520/mode/0"
-            target="_blank"
-          >
-            박스히어로(재고) 보러가기
-          </a>
-          <a
-            class="en"
-            href="https://thegabahome.github.io/TheGaba.CS.en.github.io/main"
-            target="_blank"
-          >
-          EN
-          <i class="fa-solid fa-pizza-slice fa-xl"></i>
-          </a>
-        </div>
-      </div>
-      <div class="done">복사 완료</div>
-      <div class="flex_box">
-        <div class="filter_btn">
-          <button class="f_btn all" data-filter=".all">all</button>
-          <button class="f_btn h" data-filter=".h">인사말</button>
-          <button class="f_btn e" data-filter=".e">유통기한</button>
-          <button class="f_btn a" data-filter=".a">정품</button>
-          <button class="f_btn d" data-filter=".d">배송</button>
-          <button class="f_btn c" data-filter=".c">오배송</button>
-          <button class="f_btn g" data-filter=".g">고객요청(재고)</button>
-          <button class="f_btn b" data-filter=".b">마무리인사</button>
-        </div>
-        <div class="srh_box">
-          <input class="srh" id="search" type="text" placeholder="Search.." />
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-      </div>
-    </header>
-
-    <div id="wrap">
-      <div class="box short all h e a d c g b" data-type="all h">
-        <span class="H">인사말</span>
-        <p>안녕하세요! 문의주셔서 감사합니다.</p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Hello! Thank you for your inquiry.');"
-        >
-          영어
-        </button>
-        <button class="copy" onclick="copyToClipboard('您好！谢谢您的咨询。');">
-          중국어(간체)
-        </button>
-        <button class="copy" onclick="copyToClipboard('您好！謝謝您的諮詢。');">
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã hỏi.');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Halo! Terima kasih atas pertanyaannya.');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box short all h e a d c g b" data-type="all h">
-        <span class="H">인사말</span>
-        <p>안녕하세요! 주문해주셔서 감사합니다.</p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Hello! Thank you for your order.');"
-        >
-          영어
-        </button>
-        <button class="copy" onclick="copyToClipboard('您好！谢谢您的订单。');">
-          중국어(간체)
-        </button>
-        <button class="copy" onclick="copyToClipboard('您好！謝謝您的訂單。');">
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã gọi món.');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Halo! Terima kasih atas pesanannya.');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box short all h e a d c g b" data-type="all h b">
-        <span class="B">마무리인사</span>
-        <p>감사합니다! 좋은 하루 되세요 :)</p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Thank you! Have a nice day :)');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('谢谢！祝你度过愉快的一天:)');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('謝謝！祝你度過愉快的一天:)');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Cảm ơn các bạn! Chúc một ngày tốt lành :)');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Terima kasih! Semoga harimu menyenangkan :)');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all h e" data-type="all h e">
-        <span class="H">인사말</span>
-        <span class="E">유통기한</span>
-        <p>
-          안녕하세요! 문의주셔서 감사합니다.
-          <br />
-          유통기한은 [00-00-00] 입니다.
-        </p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Hello! Thank you for your inquiry. The expiration date is ');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好！谢谢您的咨询。 保质期是');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好！謝謝您的諮詢。 保質期是');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã hỏi. Hạn sử dụng là ');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Halo! Terima kasih atas pertanyaannya. Tanggal kedaluwarsa adalah ');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all h d" data-type="all h d">
-        <span class="H">인사말</span>
-        <span class="D">배송</span>
-        <p>
-          안녕하세요! 주문해주셔서 감사합니다.
-          <br />
-          최대한 빨리 보내드릴께요 :)
-        </p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Hello! Thank you for your order. I’ll send it to you as soon as possible :)');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好！谢谢您的订单。 我会尽快发给您:)');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好！謝謝您的訂單。 我會盡快發給您:)');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          v
-          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã gọi món. Tôi sẽ gửi nhanh nhất có thể :)');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Halo! Terima kasih atas pesanannya. Kami akan mengirimkannya kepada Anda sesegera mungkin:)');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all d" data-type="all d">
-        <span class="D">배송</span>
-        <p>
-          ※말레이시아※
-          <br />
-          배송은 한국에서, 주문 확정 후 영업일 기준 1-2일 이내에 배송이
-          시작됩니다!
-          <br />
-          서말레이시아 - 8~12일 소요 / 동말레이시아 - 12~17일 소요
-        </p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Hello! Thank you for your inquiry. Shipping starts in Korea, and within 1-2 business days of order confirmation! It usually takes 8 to 12 days to arrive in West Malaysia and 12 to 17 days to get to East Malaysia.');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好！谢谢您的咨询。 配送从韩国出发，确定订单后1-2个工作日内开始配送！ 到达西马来西亚通常需要8~12天,到达东马来西亚通常需要12~17天左右。');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好！謝謝您的諮詢。 配送從韓國出發，確定訂單後1-2個工作日內開始配送！ 到達西馬來西亞通常需要8~12天,到達東馬來西亞通常需要12~17天左右。');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã hỏi. Giao hàng sẽ xuất phát từ Hàn Quốc, sau khi xác nhận đặt hàng, giao hàng sẽ bắt đầu trong vòng 1-2 ngày kể từ ngày kinh doanh! Thường mất 8 đến 12 ngày để đến Tây Malaysia, và thường mất 12 đến 17 ngày để đến Đông Malaysia.');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Halo! Terima kasih atas pertanyaannya. Pengiriman akan berangkat dari Korea, dan pengiriman akan dimulai dalam 1-2 hari kerja setelah pesanan dikonfirmasi! Biasanya butuh waktu 8 sampai 12 hari untuk sampai ke Malaysia Barat dan biasanya 12 sampai 17 hari untuk sampai ke Malaysia Timur.');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all d" data-type="all d">
-        <span class="D">배송</span>
-        <p>
-          ※말레이시아 외 동남아 배송안내※
-          <br />
-          배송은 한국에서, 주문 확정 후 영업일 기준 1-2일 이내에 배송이
-          시작됩니다!
-          <br />
-          배송은 평균 7일에서 15일정도 걸립니다.
-        </p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Hello! Thank you for your inquiry. Shipping starts in Korea, and within 1-2 business days of order confirmation! It takes about 7 to 12 days on average for delivery.');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好！谢谢您的咨询。 配送从韩国出发，确定订单后1-2个工作日内开始配送！ 配送平均需要7天到12天左右。');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好！謝謝您的諮詢。 配送從韓國出發，確定訂單後1-2個工作日內開始配送！ 配送平均需要7天到12天左右。');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã hỏi. Giao hàng sẽ xuất phát từ Hàn Quốc, sau khi xác nhận đặt hàng, giao hàng sẽ bắt đầu trong vòng 1-2 ngày kể từ ngày kinh doanh! Việc vận chuyển trung bình mất khoảng 7 đến 12 ngày.');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Halo! Terima kasih atas pertanyaannya. Pengiriman akan berangkat dari Korea, dan pengiriman akan dimulai dalam 1-2 hari kerja setelah pesanan dikonfirmasi! Pengiriman rata-rata memakan waktu 7 sampai 12 hari.');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all a" data-type="all a">
-        <span class="A">정품</span>
-        <p>맞습니다, 저희가 판매하는 제품은 모두 정품입니다.</p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Yes, all the products we sell are genuine.');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('是的，我们销售的产品都是正品。');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('是的，我們銷售的產品都是正品。');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Đúng vậy, tất cả các sản phẩm chúng tôi bán là chính hãng.');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Benar sekali, semua produk yang kami jual adalah asli.');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all c" data-type="all c">
-        <span class="C">오배송</span>
-        <p>안녕하세요, 불편함을 끼쳐 드려 죄송 ~ 송장 사진 보내주세요.</p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Hello, I’m sorry for inconvenience. I think you must have been surprised when you reiceived your parcel. To check the problem faster, could you show me the two invoices attached to the package and the product you received?');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好，很抱歉给您带来不便。我觉得收到商品的时候应该很惊讶。为了更快地确认问题，能给我看一下收到的商品和快递上的两个发票吗？');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好，很抱歉給您帶來不便。我覺得收到商品的時候應該很驚訝。爲了更快地確認問題，能給我看一下收到的商品和快遞上的兩個發票嗎？');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Xin chào, xin lỗi vì sự bất tiện này. Tôi nghĩ chắc hẳn bạn đã rất ngạc nhiên khi nhận được sản phẩm. Để xác định vấn đề nhanh hơn, bạn vui lòng cho tôi xem hai hóa đơn kèm theo sản phẩm và đơn hàng bạn nhận được không?');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Halo, mohon maaf atas ketidaknyamanannya. Saya pikir Anda pasti sangat terkejut ketika Anda menerima produk tersebut. Untuk mengidentifikasi masalah lebih cepat, dapatkah Anda menunjukkan kepada saya dua faktur yang dilampirkan pada produk dan kurir yang Anda terima?');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all c" data-type="all c">
-        <span class="C">오배송</span>
-        <p>확인 완료, 다음 주문에 같이 넣어드려도 될까요?</p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Hello, the confirmation has been completed. Thank you for waiting. I’m so sorry for the inconvenience. We want to send you the missing item, but we can’t deliver it without a new order. Can I put it in the next order together?');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好，确认完毕。 谢谢您的等待。 很抱歉给您带来不便。 我们想寄送遗漏的物品，但如果我们没有新的订单，就无法配送。 可以一起下订单吗？');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好，確認完畢。 謝謝您的等待。 很抱歉給您帶來不便。 我們想寄送遺漏的物品，但如果我們沒有新的訂單，就無法配送。 可以一起下訂單嗎？');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Xin chào, đã xác nhận xong. Cảm ơn các bạn đã chờ đợi. Tôi thực sự xin lỗi vì đã gây bất tiện. Chúng tôi muốn gửi hàng hóa bị thiếu nhưng chúng tôi không thể giao hàng nếu không có đơn đặt hàng mới. Tôi có thể cho vào cùng với đơn đặt hàng tiếp theo được không?');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Halo, konfirmasi selesai. Terima kasih telah menunggu. Maaf atas ketidaknyamanan ini. Kami ingin mengirimkan barang yang hilang, tapi kami tidak bisa mengirimkannya jika tidak ada pesanan baru. Bolehkah saya memasukkannya ke pesanan berikutnya?');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all g" data-type="all g">
-        <span class="G">고객요청</span>
-        <p>
-          죄송합니다. 이미 최저가로 판매하고 있기 때문에 더 이상의 할인은
-          불가능합니다.
-        </p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('I’m sorry, but all the products we sell have already been offered at the lowest price, so no further individual discounts are available.');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('对不起。我们销售的所有产品已经以最低价再加工，不能再单独打折了。');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('對不起。我們銷售的所有產品已經以最低價再加工，不能再單獨打折了。');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Xin lỗi. Tất cả các sản phẩm được bán bởi chúng tôi đã được bán với giá thấp nhất, vì vậy không thể giảm giá thêm cho từng cá nhân.');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Maaf. Semua produk yang kami jual telah dijual dengan harga terendah, jadi diskon individu lebih lanjut tidak memungkinkan.');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all e" data-type="all e">
-        <span class="E">유통기한</span>
-        <p>
-          프로바이오틱스의 유통기한은 최대 1년이고,
-          <br />
-          새로운 재고가 자주 생겨서 가장 최근의 물건을 보내요 :)
-        </p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Hello! Thank you for your inquiry. Probiotics have a maximum shelf life of one year. I send you the latest one because there is a lot of new stock :)');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好! 谢谢您的询问. 益生菌的保质期最长为一年。 因为新货很多，所以寄给你最新的:）');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('您好! 謝謝您的詢問. 益生菌的保質期最長爲一年。 因爲新貨很多，所以寄給你最新的:）');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Xin chào! Cảm ơn vì câu hỏi của bạn. Vi khuẩn có thời hạn sử dụng tối đa là một năm. Tôi gửi cho bạn cái mới nhất vì có rất nhiều hàng tồn kho mới :)');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Terima kasih atas pertanyaanmu. Probiotik memiliki umur simpan maksimum satu tahun. Saya mengirimkan yang terbaru karena ada banyak stok baru :)');"
-        >
-          인도네시아어
-        </button>
-      </div>
-      <div class="box all g" data-type="all g">
-        <span class="G">고객요청(재고)</span>
-        <p>
-          죄송합니다. 현재 재고가 언제 들어올지 모르는 상황입니다.
-          <br />
-          최대한 빠르게 재입고 될 수 있게 할테니, 조금만 기다려주세요.
-        </p>
-        <button
-          class="copy"
-          onclick="copyToClipboard('We can’t sure to say now when it would be avaiable again. But we will try to get it asap, please wait a little bit.');"
-        >
-          영어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('我们现在还不能肯定什么时候可以再使用。 但是我们会尽快收到，请稍等。');"
-        >
-          중국어(간체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('我們現在還不能肯定什麼時候可以再使用。 但是我們會盡快收到，請稍等。');"
-        >
-          중국어(번체)
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Chúng tôi không thể chắc chắn để nói bây giờ khi nào nó sẽ có lại. Nhưng chúng tôi sẽ cố gắng để có được nó càng sớm càng tốt, hãy chờ một chút nhé.');"
-        >
-          베트남어
-        </button>
-        <button
-          class="copy"
-          onclick="copyToClipboard('Kita tidak bisa yakin untuk mengatakan sekarang kapan itu akan tersedia lagi. Tapi kami akan mencoba untuk mendapatkannya secepatnya, silakan tunggu sebentar.');"
-        >
-          인도네시아어
-        </button>
-      </div>
-
-      <div class="box all h e a d c g b" data-type="all h e a d c g b">
-        <span class="H">인사말</span>
-        <span class="E">유통기한</span>
-        <span class="A">정품</span>
-        <span class="D">배송</span>
-        <span class="C">오배송</span>
-        <span class="G">고객요청</span>
-        <span class="B">마무리인사</span>
-        <p>복사용</p>
-        <button class="copy" onclick="copyToClipboard('');">영어</button>
-        <button class="copy" onclick="copyToClipboard('');">
-          중국어(간체)
-        </button>
-        <button class="copy" onclick="copyToClipboard('');">
-          중국어(번체)
-        </button>
-        <button class="copy" onclick="copyToClipboard('');">베트남어</button>
-        <button class="copy" onclick="copyToClipboard('');">
-          인도네시아어
-        </button>
-      </div>
-    </div>
-  </body>
+        <div class="wrapper">
+            <div class="W1" >
+                <h2><a href="https://linktr.ee/koreaunny">Marketing Team</a></h2>
+                                    <ol>
+			<li><a href="https://seller.shopee.kr/account/signin" target="_blank"><strong>쇼피 통합셀러센터 KR</strong></a></li> 
+	             	<ol>			
+						<li><a href="https://sellercenter.lazada.com.my/apps/seller/login" target="_blank"><strong>라자다</strong></a></li>       
+						<li><a href="https://qsm.qoo10.jp/GMKT.INC.Gsm.Web/login.aspx" target="_blank"><strong>Qoo10.JP</strong></a></li>     
+						<br>
+                                                                        <li><a href="https://linktr.ee/koreaunny" target="_blank"><strong>링크트리 셀러샵모음</strong></a></li>
+						<br>
+						<li><a href="https://help.shopeekorea.co.kr/hc/ko" target="_blank">쇼피 물류 & 운영 헬프센터</a></li>                   
+						<li><a href="https://subaccount.shopee.com/merchant-shop" target="_blank">서브어카운트 페이지</a></li> 
+				<br>
+				<li><a href="https://merchant.joom.com/ko" target="_blank"><strong>Joom Seller Center</strong></a></li>                    
+				<br>
+				  </ol>
+					    
+				<br>
+					<li><a href="https://thegabahome.github.io/TheGaba.CS.github.io/main" target="_blank"><strong>CS 간단복사</strong></a></li>                    
+				<br>
+	                </ol> 
+					
+                   <h2>Design</h2>
+                <ol> 
+                    <li><a href=" https://www.instagram.com/koreaunny/" target="_blank">Instagram 코리아언니</a></li>
+                    <li><a href="https://www.facebook.com/people/Eddy-Kim/100068541766452/">
+                        Facebook 코리아언니</a></li>
+		<br>
+                  <li><a href="https://docs.google.com/spreadsheets/d/1zSL_f8zWSY_KkSCTgF7nVaF561eG9ih9UVmob8n7_Bg/edit#gid=0" target="_blank"><strong>신규 리스팅 목록</strong></a></li>
+                        <li><a href="https://getemoji.com/" target="_blank"><strong>이모지 모음</strong></a></li>
+                    <li><a href="https://kr.freepik.com/>"><strong>Freepik</strong></a></li>
+                    <li><a href="https://www.dafont.com/">Dafont</a></li>
+			<br>
+                    <li><a href="https://users.wix.com/signin?redirectTo=https:%2F%2Fmanage.wix.com%2Faccount%2Fsites&originUrl=https:%2F%2Fmanage.
+                        wix.com%2Faccount%2Fsites&overrideLocale=ko&forceRender=true" target="_blank">Wix</a></li>
+                    <li><a href="http://koreaunny.com/" target="_blank">Shopify 코리아언니</a></li>             
+                    </ol>  
+		    
+		<h3>환율</h3>
+		     <ol>
+                        <li><a href="http://www.smbs.biz/ExRate/MonAvgStdExRate.jsp" target="_blank">서울외국환중개</a></li>
+		     </ol>      
+		
+            </div>
+            <div class="W2">
+                <h2>Fullfillment Team</h2>
+                         <ol>
+ <li><a href="https://www.boxhero-app.com/ko/" target="_blank"><strong>박스히어로</strong></a></li>
+                            <li><a href="https://cbt.utradehub.or.kr/main.do?sso=ok" target="_blank"><strong>수출신고 유트레이드허브</strong></a></li>  
+							<li><a href="https://cbt.shipnergy.com/" target="_blank"><Strong>JP - SHIPNERGY 일본송장</Strong></a></li>   
+                            <li><a href="https://docs.google.com/spreadsheets/d/1kWmU_zomsP_OkTuPG3Y7qQoxZ0Gvx9mrNsAB4R3VLf8/edit#gid=779819207" target="_blank">
+				    컴플레인 리스트</a></li>
+                <h3>배송 추적</h3>
+                         <ol>
+		   	    <li><a href="https://docs.google.com/spreadsheets/d/1kWmU_zomsP_OkTuPG3Y7qQoxZ0Gvx9mrNsAB4R3VLf8/edit#gid=799692553" target="_blank">
+				    구매/입고 (바코드 추적) </a></li>
+                                        <li><a href="https://docs.google.com/spreadsheets/d/1F7Wc4kXO4lB2IXSpfTh0kCfhA9BIRYkHrah0kTDdKjg/edit#gid=531971851" target="_blank">국가별 선적제한 리스트</a></li>
+		            <li><a href="https://shopeexpress.com.my/" target="_blank">SPX - MY  </a></li>
+		            <li><a href="https://spx.sg/" target="_blank">SPX - SG  </a></li>
+		            <li><a href="https://spx.ph/" target="_blank">SPX - PH  </a></li>
+		            <li><a href="https://spx.tw/" target="_blank">SPX - TW  </a></li>
+		            <li><a href="https://www.tracking.my/poslaju" target="_blank">MY - Pos La Ju</a></li>
+                            <li><a href="https://www.jtexpress.my/track.php" target="_blank">MY - J&T   </a></li>
+                            <li><a href="https://www.ninjavan.co/en-sg/" target="_blank">SG - Ninjavan  </a></li>
+		            <li><a href="https://www.jtexpress.ph/" target="_blank">PH - J&T</a></li>
+                            <li><a href="https://www.aftership.com/couriers/yto" target="_blank">TW- YTO </a></li>                            
+                            <li><a href="https://www.jne.co.id/id/beranda" target="_blank">ID - J&E</a></li>
+                            <li><a href="https://parcelsapp.com/en" target="_blank"> Global Tracking</a></li>
+                            <li><a href="https://www.cjlogistics.com/ko/tool/parcel/tracking" target="_blank">CJ 대한통운</a></li>
+                        </ol>
+            </div>
+	    <div class="W3">
+                <h2>제품 소싱</h2>
+		<h3>종합 도매몰</h3>
+			<ol>
+			    <li><a href="https://kmclubb2b.com/home/member/login.php" target="_blank">국민클럽비투비</a></li>
+			    <li><a href="https://domeggook.com" target="_blank">도매꾹(도매매)</a></li>
+			    <li><a href="https://www.maidome.com" target="_blank">마이도매</a></li>
+			    <li><a href="https://www.mamami.co.kr" target="_blank">마마미</a></li>
+			    <li><a href="https://choitemb2b.com" target="_blank">초이템</a></li>
+			    <li><a href="https://www.feelwoo.com" target="_blank">필우커머스</a></li>
+			    <li><a href="https://ezmarketb2b.com" target="_blank">이지마켓</a></li>
+			    <li><a href="http://dasopoom.com" target="_blank">다소품</a></li>
+			    <li><a href="https://www.samhangb2b.com" target="_blank">삼향종합무역</a></li>				
+			    <li><a href="https://ownerclan.com/" target="_blank">오너클랜</a></li>
+			    <li><a href="https://www.wholesaledepot.co.kr" target="_blank">도매창고</a></li>
+			    <li><a href="http://www.w-trading.co.kr/" target="_blank">더블유트레이드</a></li>
+			    <li><a href="https://www.zentrade.co.kr/shop/main/index.php" target="_blank">젠트레이드</a></li>
+			    <li><a href="https://www.1688.com/" target="_blank">[중국 사이트] 1688</a></li>
+                            <li><a href="https://world.taobao.com/" target="_blank">[중국 사이트] 타오바오</a></li>
+			</ol>
+		<h3>기타 도매</h3>
+			<ol>
+			    <li><a href="https://www.perzoom.co.kr" target="_blank">[문구] 퍼줌</a></li>
+			    <li><a href="https://www.atticase.co.kr" target="_blank">[휴대폰 악세서리] 아띠케이스</a></li>
+			    <li><a href="https://manipanda.com" target="_blank">[패션잡화] 미니판다</a></li>
+			    <li><a href="https://twostory.co.kr" target="_blank">[패션잡화] 투스토리</a></li>
+			    <li><a href="https://nice-dome.com" target="_blank">[애견용품] 나이스펫</a></li>
+			    <li><a href="https://withdrama.co.kr" target="_blank">[음반도서] 위드드라마</a></li>	
+			    <li><a href="https://kstarhit.com" target="_blank">[음반도서] 케이스타힛</a></li>	
+			    <li><a href="http://www.kseller.kr/" target="_blank">[식품] 케이셀러</a></li	    
+			</ol>                    
+            </div>	 
+		    
+            <div class="W4">
+                <h2>기타</h2>
+                 <h3>언어</h3>
+					<ol>
+					    <li><a href ="https://papago.naver.com/?sk=auto&tk=ko&st=Sorry%20because%20I%20transfer%20two%20times%20so%20I%20scare%20you%20nv%20saw%20my%20msg"
+					    target="_blank"  > 네이버 파파고 </a> </li>
+					    <li><a href ="https://translate.google.com/" target="_blank"  >구글 번역 </a></li>
+					    <li><a href="https://zh.dict.naver.com/#/main" target="_blank">네이버 사전</a></li>
+					    <li><a href="https://en.dict.naver.com/#/main" target="_blank">네이버 영어사전</a></li>
+					    <li><a href="https://zh.dict.naver.com/#/main" target="_blank">네이버 중국어사전</a></li>
+					</ol>
+                  <h3>기타 링크</h3>
+				    <ol>
+						<li><a href="https://www.ppomppu.co.kr/" target="_blank">__</a></li>
+				    </ol> 
+	  <h2>참고사이트</h2>
+			<ol>
+				<li><a href="https://www.atomy.kr/v2/Home/Product/MallMain" target="_blank"> 
+				 Atomy KR</a></li>
+				<li><a href="https://www.atomy.com/my/Home/Product/MallMain " target="_blank"> 
+				   Atomy MY</a></li>
+				<li><a href="https://www.atomy.com/sg/Home/Product/MallMain " target="_blank"> 
+				   Atomy SG</a></li>
+				<li><a href="https://www.atomy.com/tw/Home/Product/MallMain" target="_blank"> 
+				Atomy TW</a></li>
+				<li><a href="https://www.atomy.com/jp/Home/Product/MallMain" target="_blank"> 
+				Atomy JP</a></li>
+				<li><a href="https://medipeelchina.com/" target="_blank"> Medipeel China </a>
+				<li><a href="https:incellderm.rimankorea.com" target="_blank"> INCELLDERM</a></li>
+                                                <li><a href="https://www.tabae.co.kr/" target="_blank">타배 (배송대행지) </a></li>
+                                                <li><a href="http://www.boxmall.net/" target="_blank">박스몰</a></li>                         
+		    </ol>   
+            </div>
+        </div>  
+    </body>
 </html>
