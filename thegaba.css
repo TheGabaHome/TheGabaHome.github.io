@@ -63,7 +63,6 @@ li :hover {
 }
 .tag {
   display: inline-block;
-  /* border: 1px solid black; */
   border-radius: 30px;
   width: 35px;
   text-align: center;
