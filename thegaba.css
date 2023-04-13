@@ -34,9 +34,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.logo {
-  /* border: 1px solid darkblue; */
-}
+
 .logo::before {
   content: '';
   display: inline-block;
@@ -195,7 +193,10 @@ ul li:hover {
   margin-right: 5px;
   vertical-align: top;
 }
-
+.cs ul li {
+  display: flex;
+  justify-content: space-between;
+}
 .tag {
   display: inline-block;
   /* border: 1px solid black; */
@@ -203,7 +204,7 @@ ul li:hover {
   width: 35px;
   text-align: center;
   margin-left: 5px;
-  padding: 2px;
+  padding: 2px 5px 4px 5px;
   font-size: 13px;
 }
 .kr {
@@ -327,7 +328,7 @@ ul li:hover {
   }
   .logo {
     /* border: 1px solid darkgreen; */
-    display: flex-box;    
+    display: flex-box;
     width: 60%;
   }
   .logo a {
@@ -337,12 +338,14 @@ ul li:hover {
     /* border: 1px solid salmon; */
   }
   .gab_home {
-    top: 20px; left: 150px; 
+    top: 20px;
+    left: 150px;
   }
-  .unny_shop{
-    top: 80px; left: 150px;
+  .unny_shop {
+    top: 80px;
+    left: 150px;
   }
-  
+
   .link {
     /* border: 1px solid #6638B6; */
     width: 40%;
@@ -401,12 +404,14 @@ ul li:hover {
     /* border: 1px solid salmon; */
   }
   .gab_home {
-    top: 16px; left: 150px; 
+    top: 16px;
+    left: 150px;
   }
-  .unny_shop{
-    top: 77px; left: 150px;
+  .unny_shop {
+    top: 77px;
+    left: 150px;
   }
-  
+
   .link {
     /* border: 1px solid #6638B6; */
     width: 30%;
@@ -440,5 +445,4 @@ ul li:hover {
   .egg {
     display: none;
   }
-  
 }
