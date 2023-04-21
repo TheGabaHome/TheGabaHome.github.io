@@ -1,8 +1,6 @@
 body {
   padding: 0;
   margin: 0;
-  height: 100vh;
-  overflow: hidden;
   word-break: keep-all;
 }
 ul {
@@ -314,10 +312,6 @@ ul li:hover {
 }
 
 @media screen and (max-width: 1023px) {
-  body {
-    overflow: auto;
-  }
-
   header {
     /* border: 1px solid darkblue; */
     height: auto;
