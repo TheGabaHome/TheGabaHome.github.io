@@ -181,6 +181,16 @@ ul li:hover {
   margin-right: 7px;
   vertical-align: -9px;
 }
+.amazon strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://cdn.icon-icons.com/icons2/2699/PNG/512/amazon_logo_icon_169611.png');
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  vertical-align: -9px;
+}
 .linktree strong::before {
   content: '';
   display: inline-block;
@@ -312,6 +322,10 @@ ul li:hover {
 }
 
 @media screen and (max-width: 1023px) {
+  body {
+    overflow: auto;
+  }
+
   header {
     /* border: 1px solid darkblue; */
     height: auto;
