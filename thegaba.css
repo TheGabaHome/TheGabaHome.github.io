@@ -56,8 +56,23 @@ header {
   margin-right: 20px;
   /* border: 1px solid #6638B6; */
   padding: 11px 0px;
+  display: flex;
 }
-.link a {
+.tb {
+}
+.nas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 40px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #3d3f58;
+  color: #ffffff;
+}
+.link .smb,
+.link .papago,
+.link .google {
   /* border: 1px solid salmon; */
   display: inline-block;
   padding: 15px 40px;
