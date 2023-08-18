@@ -216,6 +216,16 @@ ul li:hover {
   margin-right: 5px;
   vertical-align: top;
 }
+.homepage strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://pcr.cloud-mercato.com/static/img/logos/vultr.png');
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: top;
+}
 .cs ul li {
   display: flex;
   justify-content: space-between;
@@ -282,9 +292,17 @@ ul li:hover {
   align-items: center;
   border-radius: 7px;
 }
-
-.ft_box {
+.li {
+  margin: -5px 5px;
+}
+.li .li_box {
+  width: 100%;
+  margin: 5px;
+}
+.ft_box, .li {
   display: flex;
+  /* border: 1px solid #cccccc; */
+
 }
 
 .ft_box div {
