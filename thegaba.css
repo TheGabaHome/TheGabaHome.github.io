@@ -221,6 +221,18 @@ ul li:hover {
   margin-right: 7px;
   vertical-align: -9px;
 }
+.tiktok strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://i.namu.wiki/i/jmtXM8sY27tEbZgvkv62hRambVlVgaHqlThz04GSWmU3xYgbbVZV0pXsNHmeayg9OoG8-5ekm9iUc3XICh1ROqd-H7A1rPvaJlXa3GTvqmjbBOldG_ymkPmuu74kGNfDsSQ3bk90oB9NyVoEB5Qefg.svg');
+  background-repeat: no-repeat;
+  background-size: 100px 30px;
+  width: 100px;
+  height: 30px;
+  margin-top: -4px;
+  margin-right: 0px;
+  vertical-align: -8px;
+}
 .linktree strong::before {
   content: '';
   display: inline-block;
@@ -314,10 +326,10 @@ ul li:hover {
   width: 100%;
   margin: 5px;
 }
-.ft_box, .li {
+.ft_box,
+.li {
   display: flex;
   /* border: 1px solid #cccccc; */
-
 }
 
 .ft_box div {
