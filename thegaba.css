@@ -1,609 +1,526 @@
-<!DOCTYPE html>
-<html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The GABA</title>
-    <link rel="stylesheet" href="thegaba.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/9fc8afa030.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <div class="flex_box">
-        <div class="logo">
-          <a href="https://www.thegaba.net/" target="_blank" class="gab_home">
-            더가바 홈페이지
-          </a>
-          <a href="https://unnyshop.com/" target="_blank" class="unny_shop">
-            코리아언니샵 (WIX)
-          </a>
-        </div>
-        <div class="link">
-          <div class="tb">
-            <a
-              href="https://thegaba.daouoffice.com/app/home"
-              target="_blank"
-              class="daou"
-            >
-              <span class="daou_logo"></span>
-            </a>
-          </div>
-          <div class="t">
-            <a
-              href="http://QuickConnect.to/THEGABA"
-              target="_blank"
-              class="nas"
-            >
-              <span>NAS</span>
-            </a>
-          </div>
-          <div>
-            <div class="t">
-              <a
-                href="http://www.smbs.biz/ExRate/MonAvgStdExRate.jsp"
-                target="_blank"
-                class="smb"
-              >
-                서울외국환중개
-              </a>
-            </div>
-            <div class="tl">
-              <a
-                href="https://papago.naver.com/?sk=auto&tk=ko"
-                target="_blank"
-                class="papago"
-              >
-                네이버 파파고
-              </a>
-              <a
-                href="https://translate.google.com/"
-                target="_blank"
-                class="google"
-              >
-                구글 번역
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="container">
-      <div class="mt">
-        <h2>
-          <i class="fa-solid fa-store"></i>
-          Marketing Team
-        </h2>
-        <div class="sellercenter">
-          <h4>Seller Center</h4>
-          <ul>
-            <li class="shopee">
-              <a
-                class="shopee"
-                href="https://seller.shopee.kr/account/signin"
-                target="_blank"
-              >
-                <strong>Shopee</strong>
-                KR Seller Center
-              </a>
-            </li>
-            <li class="lazada">
-              <a
-                class="lazada"
-                href="https://sellercenter.lazada.com.my/apps/seller/login"
-                target="_blank"
-              >
-                <strong>Lazada</strong>
-                Seller Center
-              </a>
-            </li>
-            <li class="qoo10">
-              <a
-                class="qoo10"
-                href="https://qsm.qoo10.jp/GMKT.INC.Gsm.Web/login.aspx"
-                target="_blank"
-              >
-                <strong>Qoo10</strong>
-                Sales Manager
-              </a>
-            </li>
-            <li class="joom">
-              <a
-                class="joom"
-                href="https://merchant.joom.com/ko"
-                target="_blank"
-              >
-                <svg fill="none" viewBox="0 0 230 19" class="joom_logo">
-                  <path
-                    fill="#f34142"
-                    d="M0 16a2.8 2.8 0 002.8 2.8c1.6 0 2.8-1.2 2.8-2.8a2.8 2.8 0 00-2.8-2.7A2.8 2.8 0 000 16z"
-                  ></path>
-                  <path
-                    fill="#3a3C54"
-                    d="M7.3 5.6v13.2c3.1 0 5.6-2.5 5.6-5.6V0a5.6 5.6 0 00-5.6 5.6zM28 13.2a2 2 0 01-.7 1.5 2 2 0 01-1.5.7c-.3 0-.7 0-.9.3-.2.3-.4.6-.4 1s.2.6.4.8c.3.3.6.4.9.4 1.3 0 2.4-.4 3.3-1.3a4.5 4.5 0 001.4-3.4V3.8c0-.3-.2-.6-.4-.9a1.2 1.2 0 00-.9-.4c-.4 0-.7.2-.9.4-.3.3-.4.6-.4 1v9.3zM40.6 5a5 5 0 013.7 1.5 5 5 0 011.5 3.7 5 5 0 01-1.5 3.7 5 5 0 01-3.7 1.5 5 5 0 01-3.6-1.5 5 5 0 01-1.6-3.7A5 5 0 0137 6.6 5 5 0 0140.7 5zm0 13c2.1 0 4-.9 5.5-2.4a7.4 7.4 0 002.2-5.4c0-2.1-.7-4-2.2-5.4a7.4 7.4 0 00-5.5-2.3 7.4 7.4 0 00-5.4 2.3 7.4 7.4 0 00-2.3 5.4c0 2.1.8 4 2.3 5.4a7.4 7.4 0 005.4 2.3zM58.3 5A5 5 0 0162 6.7a5 5 0 011.5 3.6A5 5 0 0162 14a5 5 0 01-3.7 1.5 5 5 0 01-3.6-1.5 5 5 0 01-1.6-3.7 5 5 0 011.6-3.6A5 5 0 0158.3 5zm0 13c2.1 0 4-.8 5.5-2.4a7.4 7.4 0 002.2-5.4c0-2.1-.7-4-2.2-5.4a7.4 7.4 0 00-5.5-2.3A7.4 7.4 0 0053 4.8a7.4 7.4 0 00-2.3 5.4c0 2.1.8 4 2.3 5.4a7.4 7.4 0 005.4 2.3zM83.5 2.4a1.3 1.3 0 00-.9 0L82 3l-5.2 8.7L71.5 3a1.3 1.3 0 00-1.4-.6l-.7.5a1.2 1.2 0 00-.3.8v12.8c0 .4.2.7.4 1 .2.2.5.3.9.3s.6-.1.9-.4c.3-.2.4-.5.4-.9V8.3l4 6.6v.1l.1.1.1.1h.1v.1h.1l.1.1h.1l.3.1h.6a.3.3 0 01.1 0v-.1a.2.2 0 00.1 0 .7.7 0 00.1-.1.6.6 0 00.1-.1l.1-.1.1-.1 4-6.7v8.3c0 .4.2.7.4 1 .3.2.6.3 1 .3s.6-.1.8-.4c.3-.2.4-.5.4-.9V3.8c0-.3-.1-.6-.3-.8l-.6-.5z"
-                  ></path>
-                  <path
-                    fill="#ff2638"
-                    d="M110.5 2.5a1.3 1.3 0 00-.9 0l-.6.6-5.2 8.7L98.5 3a1.3 1.3 0 00-1.4-.6c-.3 0-.5.2-.7.5a1.2 1.2 0 00-.3.7v12.9c0 .3.2.6.4.9.3.2.6.4 1 .4s.6-.2.8-.4c.3-.3.4-.6.4-1v-8l4 6.6v.1h.1v.1h.1v.1h.1v.1h.2a1 1 0 000 .1h.5v.1l.5-.1a.3.3 0 01.1 0 .2.2 0 00.1 0v-.1a.6.6 0 00.1 0 .6.6 0 00.1-.1V15h.2v-.2l4-6.6v8.3c0 .3.2.6.4.9.3.2.6.4 1 .4.3 0 .6-.2.8-.4.3-.3.4-.5.4-1V3.8a1 1 0 00-.3-.7l-.6-.5zm7.7 12.8v-3.9h4.7a1.3 1.3 0 001.3-1.2c0-.4-.1-.7-.4-1a1.3 1.3 0 00-.9-.3h-4.7V5h6.5c.4 0 .6 0 .9-.3.2-.3.4-.6.4-1s-.2-.6-.4-.8a1.2 1.2 0 00-.9-.4H117c-.4 0-.7.1-1 .4a1.2 1.2 0 00-.3.9v12.8c0 .3.1.6.4.9.2.2.5.4.9.4h7.7c.4 0 .6-.2.9-.4.2-.3.4-.5.4-1l-.4-.8a1.2 1.2 0 00-.9-.4h-6.5zM131.8 9V5h3.2c.6 0 1.1.2 1.6.6a1.8 1.8 0 010 2.7 2.4 2.4 0 01-1.5.6h-3.3zm8-2a4 4 0 00-1.5-3.1 4.7 4.7 0 00-3.3-1.3h-4.5a1 1 0 00-.8.4 1.2 1.2 0 00-.4.9v12.7a1.2 1.2 0 001.2 1.3 1.3 1.3 0 001.3-1.3v-5.1h2.2l2.8 5.7c.2.5.6.7 1.1.7a1.2 1.2 0 001.2-.8v-1l-2.5-4.9a4.6 4.6 0 002.3-1.6 4.1 4.1 0 00.8-2.6zM150 18c2 0 3.7-.7 5.1-2 .3-.3.4-.6.4-1 0-.3 0-.6-.3-.8a1.2 1.2 0 00-.9-.4c-.3 0-.6 0-.9.3a5 5 0 01-3.4 1.3 5 5 0 01-3.6-1.5 5 5 0 01-1.5-3.6 5 5 0 011.5-3.6 5 5 0 013.6-1.5c1.1 0 2.2.4 3 1 .4.3.7.4 1 .3.4 0 .6-.2.8-.5a1.3 1.3 0 00-.2-1.8 7.5 7.5 0 00-4.6-1.5c-2.1 0-4 .7-5.4 2.2a7.4 7.4 0 00-2.3 5.4c0 2.1.8 4 2.3 5.4A7.4 7.4 0 00150 18zm19.5 0a1.3 1.3 0 001.3-1.3V3.8c0-.4-.1-.7-.4-1a1.2 1.2 0 00-.9-.3c-.3 0-.6.1-.9.4s-.3.5-.3.9v5.1h-6.7V3.8c0-.3 0-.6-.3-1a1.2 1.2 0 00-1-.3c-.3 0-.6.2-.8.4-.3.3-.4.6-.4.9v12.8c0 .3.1.6.4.9.2.2.5.3.9.3.3 0 .6 0 .9-.3.2-.3.4-.6.4-1v-5h6.5v5c0 .4.2.7.4 1 .3.2.6.3 1 .3zm9.5-6l2-5 2.1 5H179zm-3.7 5.7h.4c.6 0 1-.2 1.2-.7l1-2.5h6.2l1 2.5c.3.5.7.7 1.2.7a1.3 1.3 0 001.2-1.7l-1.4-3.3-3.9-9.5v-.1h-.1V3h-.1a.2.2 0 01-.1-.1h-.1v-.1h-.1a.9.9 0 00-.4-.2h-.4a.5.5 0 01-.1 0 .5.5 0 01-.1 0 .3.3 0 01-.1 0 1 1 0 00-.2.2h-.1l-.1.1h-.1V3a120.3 120.3 0 01-.2.2.8.8 0 000 .1l-4 9.5-1.3 3.3a1.3 1.3 0 00.7 1.7zm25.5-.4a1.4 1.4 0 00.5.3h.1a.7.7 0 000 .1h.1a1.4 1.4 0 00.3 0 1.6 1.6 0 00.2 0h.2l.2-.1a1.6 1.6 0 00.3-.3.4.4 0 00.1-.1l.1-.1V17a.2.2 0 000-.1h.1V3.6c0-.3 0-.6-.3-.8a1.2 1.2 0 00-1-.4c-.2 0-.5.1-.8.4a1.2 1.2 0 00-.4.9v9.1L192.8 3a1.2 1.2 0 00-1.4-.4c-.2 0-.4.2-.6.4a1.2 1.2 0 00-.2.8v12.8c0 .3.1.6.4.9.2.2.5.4.9.4s.6-.2.8-.4c.3-.3.4-.5.4-1v-9l7.7 9.9zm9.8-.8c0 .3.2.6.4.9.3.2.6.3 1 .3s.6 0 .8-.3c.2-.3.4-.6.4-1V5h3.2a1.3 1.3 0 00.9-2.2 1.2 1.2 0 00-1-.3h-8.8a1.3 1.3 0 00-1 2.1c.3.3.6.4 1 .4h3.2v11.6zm19.4-3.3a3.7 3.7 0 00-1-2.9c-1-1-2.3-1.5-4-1.5h-.1c-1 0-1.8-.2-2.3-.7-.2-.3-.4-.6-.4-1 0-.6.3-1.1.8-1.5a2.6 2.6 0 011.7-.7 4 4 0 011.8.4c.6.3.9.6 1 1.1.1.3.3.6.6.8.3.1.6.2 1 .1.3 0 .6-.3.7-.6.2-.3.2-.6.2-1a4 4 0 00-2.1-2.5 6.4 6.4 0 00-3.2-.8 5 5 0 00-3.4 1.3 4.5 4.5 0 00-1.6 3.3 3.7 3.7 0 001.1 2.8c1 1 2.3 1.5 4 1.5 1.1 0 1.9.3 2.3.8.3.3.4.6.4 1a2 2 0 01-.8 1.5c-.5.4-1 .6-1.7.6s-1.3 0-1.8-.3-.9-.7-1-1.1a1.2 1.2 0 00-1.5-1 1.2 1.2 0 00-1 1.6A4 4 0 00222 17c.9.5 2 .7 3.1.7a5 5 0 003.5-1.3 4.5 4.5 0 001.5-3.2z"
-                  ></path>
-                </svg>
-              </a>
-            </li>
-            <li class="amazon">
-              <a
-                class="amazon"
-                href="https://sellercentral.amazon.com/home"
-                target="_blank"
-              >
-                <strong>Amazon</strong>
-                Seller Central
-              </a>
-            </li>
-            <li class="tiktok">
-              <a
-                class="tiktok"
-                href="https://seller.tiktok.com/"
-                target="_blank"
-              >
-                <strong></strong>
-                Shop
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://help.shopeekorea.co.kr/hc/ko" target="_blank">
-                쇼피 물류 & 운영 헬프센터
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://subaccount.shopee.com/merchant-shop"
-                target="_blank"
-              >
-                서브어카운트 페이지
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4>Shop</h4>
-          <ul>
-            <li>
-              <a
-                class="linktree"
-                href="https://linktr.ee/koreaunny"
-                target="_blank"
-              >
-                <strong>코리아언니</strong>
-                셀러샵모음
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a class="zezam" href="https://zez.am/re_well" target="_blank">
-                <strong>리웰</strong>
-                셀러샵모음
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="cs">
-          <h4>CS</h4>
-          <ul>
-            <li>
-              <a
-                href="https://thegabahome.github.io/TheGaba.CS.github.io/main"
-                target="_blank"
-              >
-                <strong>
-                  CS 간단복사
-                  <a
-                    class="tag kr"
-                    href="https://thegabahome.github.io/TheGaba.CS.github.io/main"
-                    target="_blank"
-                  >
-                    KR
-                  </a>
-                  <a
-                    class="tag en"
-                    href="https://thegabahome.github.io/TheGaba.CS.en.github.io/main"
-                    target="_blank"
-                  >
-                    EN
-                  </a>
-                </strong>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://docs.google.com/spreadsheets/d/1urAKsCzVAkZ6IuvH_AjB6m88orkuWXz7k5-3O5MY4fc/edit#gid=1804189692"
-                target="_blank"
-              >
-                <strong>
-                  제품 유통기한, 무게 CS 구글 시트
-                </strong>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="dt">
-        <h2>
-          <i class="fa-solid fa-palette"></i>
-          Design Team
-        </h2>
-        <div class="sns">
-          <h4>SNS</h4>
-          <ul>
-            <li>
-              <b>Koreaunny</b>
-              <strong class="sns_box">
-                <a
-                  class="insta"
-                  href=" https://www.instagram.com/koreaunny/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-instagram fa-2xl"></i>
-                </a>
-                <a
-                  class="fb"
-                  href="https://www.facebook.com/profile.php?id=100068757046617"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-facebook-f fa-2xl"></i>
-                </a>
-              </strong>
-            </li>
-            <li>
-              <b>Re:well</b>
-              <strong class="sns_box">
-                <a
-                  class="insta"
-                  href="https://www.instagram.com/re_well_shop/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-instagram fa-2xl"></i>
-                </a>
-                <a
-                  class="fb"
-                  href="https://www.facebook.com/profile.php?id=61550529937361"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-facebook-f fa-2xl"></i>
-                </a>
-              </strong>
-            </li>
-            <div class="li">
-              <li class="li_box" target="_blank">
-                <b>Tim Live</b>
-                <strong class="sns_box">
-                  <a
-                    class="insta"
-                    href="https://www.instagram.com/tim_live_official/"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-instagram fa-2xl"></i>
-                  </a>
-                  <a class="fb" href="" style="display: none;" target="_blank">
-                    <i class="fa-brands fa-facebook-f fa-2xl"></i>
-                  </a>
-                </strong>
-              </li>
-              <li class="li_box">
-                <b>POPPOP</b>
-                <strong class="sns_box">
-                  <a
-                    class="insta"
-                    href="https://www.instagram.com/poppop.kr/"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-instagram fa-2xl"></i>
-                  </a>
-                  <a class="fb" href="" style="display: none;" target="_blank">
-                    <i class="fa-brands fa-facebook-f fa-2xl"></i>
-                  </a>
-                </strong>
-              </li>
-            </div>
-          </ul>
-        </div>
-        <div>
-          <h4>디자인 소스</h4>
-          <ul>
-            <li>
-              <a href="https://getemoji.com/" target="_blank">이모지 모음</a>
-            </li>
-            <li>
-              <a href="https://kr.freepik.com/" target="_blank">Freepik</a>
-            </li>
-            <li>
-              <a href="https://www.dafont.com/" target="_blank">Dafont</a>
-            </li>
-            <li><a href="https://noonnu.cc/index" target="_blank">눈누</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>디자인 요청</h4>
-          <ul>
-            <li>
-              <a
-                href="https://thegaba.daouoffice.com/app/works/applet/6635/home"
-                target="_blank"
-              >
-                디자인 제작 요청 페이지
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://docs.google.com/spreadsheets/d/1wkMu-IyOMjTQU5zewmTcOtKjgMYdquVu9sMqGUK_pJ4/edit#gid=0"
-                target="_blank"
-              >
-                신규 리스팅 스프레드시트
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="homepage">
-          <h4>홈페이지 작업</h4>
-          <ul>
-            <li>
-              <a href="https://www.vultr.com/" target="_blank">
-                <strong>Vultr</strong>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="ft">
-        <h2>
-          <i class="fa-solid fa-boxes-stacked"></i>
-          Fullfillment Team
-        </h2>
-        <div class="ft_box">
-          <div>
-            <h4>물류 작업</h4>
-            <ul>
-              <li>
-                <a href="https://www.boxhero-app.com/ko/" target="_blank">
-                  <strong>박스히어로</strong>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://cbt.utradehub.or.kr/main.do?sso=ok"
-                  target="_blank"
-                >
-                  <strong>수출신고 유트레이드허브</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://cbt.shipnergy.com/" target="_blank">
-                  <strong>JP - SHIPNERGY 일본송장</strong>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="egg" style="color: transparent;">
-              이스터에그 발견 0,.<-★
-            </h4>
-            <ul>
-              <li>
-                <a href="https://www.fedex.com/ko-kr/home.html" target="_blank">
-                  FedEx
-                </a>
-              </li>
-              <li>
-                <a href="https://www.epantos.com/index.do" target="_blank">
-                  LX판토스
-                </a>
-              </li>
-              <li>
-                <a href="https://www.bizesm.com/" target="_blank">
-                  BIZESM
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="ft_box">
-          <div>
-            <h4>배송 추적</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://docs.google.com/spreadsheets/d/1kWmU_zomsP_OkTuPG3Y7qQoxZ0Gvx9mrNsAB4R3VLf8/edit#gid=799692553"
-                  target="_blank"
-                >
-                  구매/입고 (바코드 추적)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://docs.google.com/spreadsheets/d/1F7Wc4kXO4lB2IXSpfTh0kCfhA9BIRYkHrah0kTDdKjg/edit#gid=531971851"
-                  target="_blank"
-                >
-                  국가별 선적제한 리스트
-                </a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="https://parcelsapp.com/en" target="_blank">
-                  Global Tracking
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.cjlogistics.com/ko/tool/parcel/tracking"
-                  target="_blank"
-                >
-                  CJ 대한통운
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="delivery">
-            <h4 class="egg" style="color: transparent;">
-              이스터에그 발견 0,.<-★
-            </h4>
-            <ul>
-              <li>
-                <strong>SPX</strong>
-                <b class="spx">
-                  <a href="https://shopeexpress.com.my/" target="_blank">MY</a>
-                  <a href="https://spx.sg/" target="_blank">SG</a>
-                  <a href="https://spx.ph/" target="_blank">PH</a>
-                  <a href="https://spx.tw/" target="_blank">TW</a>
-                </b>
-              </li>
-              <li>
-                <strong>MY</strong>
-                <b class="my_f">
-                  <a href="https://www.tracking.my/poslaju" target="_blank">
-                    Pos La Ju
-                  </a>
-                  <a href="https://www.jtexpress.my/track.php" target="_blank">
-                    J&T
-                  </a>
-                </b>
-              </li>
-              <li>
-                <strong>SG</strong>
-                <a href="https://www.ninjavan.co/en-sg/" target="_blank">
-                  Ninjavan
-                </a>
-              </li>
-              <li>
-                <strong>PH</strong>
-                <a href="https://www.jtexpress.ph/" target="_blank">J&T</a>
-              </li>
-              <li>
-                <strong>TW</strong>
-                <a href="https://www.aftership.com/couriers/yt" target="_blank">
-                  YTO
-                </a>
-              </li>
-              <li>
-                <strong>ID</strong>
-                <a href="https://www.jne.co.id/id/beranda" target="_blank">
-                  J&E
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="etc">
-        <h2>
-          <i class="fa-solid fa-paperclip"></i>
-          ETC
-        </h2>
-        <div class="brand">
-          <ul>
-            <li>
-              <strong>ATOMY</strong>
-              <b>
-                <a
-                  href="https://www.atomy.kr/v2/Home/Product/MallMain"
-                  target="_blank"
-                >
-                  KR
-                </a>
-                <a
-                  href="https://www.atomy.com/my/Home/Product/MallMain"
-                  target="_blank"
-                >
-                  MY
-                </a>
-                <a
-                  href="https://www.atomy.com/sg/Home/Product/MallMain"
-                  target="_blank"
-                >
-                  SG
-                </a>
-                <a
-                  href="https://www.atomy.com/tw/Home/Product/MallMain"
-                  target="_blank"
-                >
-                  TW
-                </a>
-                <a
-                  href="https://www.atomy.com/jp/Home/Product/MallMain"
-                  target="_blank"
-                >
-                  JP
-                </a>
-              </b>
-            </li>
-            <li>
-              <a href="https://medipeelchina.com/" target="_blank">
-                Medipeel China
-              </a>
-            </li>
-            <li>
-              <a href="https:incellderm.rimankorea.com" target="_blank">
-                INCELLDERM
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tabae.co.kr/" target="_blank">
-                타배 (배송대행지)
-              </a>
-            </li>
-            <li>
-              <a href="http://www.boxmall.net/" target="_blank">박스몰</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4>도매</h4>
-          <ul>
-            <li>
-              <a
-                href="https://kmclubb2b.com/home/member/login.php"
-                target="_blank"
-              >
-                국민클럽비투비
-              </a>
-            </li>
-            <li>
-              <a href="https://domeggook.com" target="_blank">도매꾹(도매매)</a>
-            </li>
-            <li>
-              <a href="https://www.1688.com/" target="_blank">
-                [중국 사이트] 1688
-              </a>
-            </li>
-            <li>
-              <a href="https://world.taobao.com/" target="_blank">
-                [중국 사이트] 타오바오
-              </a>
-            </li>
-            <li>
-              <a href="https://withdrama.co.kr" target="_blank">
-                [음반도서] 위드드라마
-              </a>
-            </li>
-            <li>
-              <a href="https://kstarhit.com" target="_blank">
-                [음반도서] 케이스타힛
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+body {
+  padding: 0;
+  margin: 0;
+  word-break: keep-all;
+}
+ul {
+  padding: 0;
+  list-style: square;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li a {
+  display: block;
+}
+
+:root {
+  --shopee: #ee4e2e;
+  --lazada: #5532c0;
+  --qoo10: #ed2f3d;
+  --joom: #3d3f58;
+  --linktree: #3be255;
+}
+
+header {
+  /* border: 1px solid darkblue; */
+  height: 150px;
+}
+.flex_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://static.wixstatic.com/media/9db3e8_7332ec97e32942dcb3d3e6943a77cdcc~mv2.png/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01/131231.webp');
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+}
+.logo a {
+  /* border: 1px solid salmon; */
+  display: inline-block;
+  padding: 15px 40px;
+  text-align: center;
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+.link {
+  vertical-align: middle;
+  margin-right: 20px;
+  /* border: 1px solid #6638B6; */
+  padding: 11px 0px;
+  display: flex;
+}
+.daou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #39c1cd;
+  color: #ffffff;
+}
+.daou_logo {
+  content: ' ';
+  background-image: url('https://play-lh.googleusercontent.com/b1y99H9lRw0Qw4eocoIzn7rAEkVkWC4fGIBGncDftUOlg7zv35-nsxR0ZTmH-sdsf5u4');
+  background-size: auto 92px;
+  width: 92px;
+  height: 92px;
+}
+.nas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 40px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #3d3f58;
+  color: #ffffff;
+}
+.link .smb,
+.link .papago,
+.link .google {
+  /* border: 1px solid salmon; */
+  display: inline-block;
+  padding: 15px 40px;
+  text-align: center;
+  font-size: 16px;
+  vertical-align: middle;
+  margin: 5px;
+  border-radius: 10px;
+}
+.link .t a {
+  display: block;
+}
+.gab_home {
+  background-color: #91aabf;
+  color: #ffffff;
+}
+.unny_shop {
+  background-color: #e9bdbe;
+  color: #ffffff;
+}
+.smb {
+  background-color: #941d2d;
+  color: #ffffff;
+}
+.papago {
+  background-color: #00a1ff;
+  color: #ffffff;
+}
+.google {
+  background-color: #0f9d58;
+  color: #ffffff;
+}
+header a:hover {
+  opacity: 0.7;
+}
+
+.container {
+  /* border: 3px solid black; */
+  border-radius: 10px;
+  margin: -10px 20px 20px 20px;
+  padding: 0px;
+  display: flex;
+  align-items: stretch;
+  background-color: #f5f5f5;
+}
+.mt,
+.dt,
+.ft,
+.etc {
+  /* border: 1px solid darkgoldenrod; */
+  width: 20%;
+  margin: 10px;
+  padding: 0px 20px;
+  background-color: #f5f5f5;
+}
+.ft {
+  width: 33%;
+}
+.ft > div > ul {
+  width: 50%;
+}
+
+h2 {
+  margin-left: 15px;
+}
+h4 {
+  margin: 0 0 0 15px;
+}
+
+ul li {
+  /* border: 1px solid saddlebrown; */
+  border-radius: 5px;
+  margin: 10px;
+  padding: 13px 15px;
+  background-color: #ffffff;
+}
+
+ul li:hover {
+  box-shadow: 0 0 10px #e2e2e2;
+}
+.joom_logo {
+  height: 19px;
+  margin-left: 7px;
+}
+.shopee strong {
+  color: var(--shopee);
+}
+.shopee strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://i.esdrop.com/d/f/aswBdVsEn9/rcN6MKDSbL.png');
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  vertical-align: -9px;
+}
+.lazada strong {
+  color: var(--lazada);
+}
+.lazada strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://i.esdrop.com/d/f/aswBdVsEn9/5e3ZFjtZzK.png');
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  vertical-align: -9px;
+}
+.qoo10 strong {
+  color: var(--qoo10);
+}
+.qoo10 strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://i.esdrop.com/d/f/aswBdVsEn9/UhjwUQdA9v.png');
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  vertical-align: -9px;
+}
+.amazon strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://cdn.icon-icons.com/icons2/2699/PNG/512/amazon_logo_icon_169611.png');
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  vertical-align: -9px;
+}
+.tiktok strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://i.namu.wiki/i/sGm6zM-xu_y1s5hr14z7G7T-vD-LxOrvWp3viCRLsBcfMvdwa0fOf1ykR2sOugF_kGJqOeL0WZ_-OR2W-zlSExfsNs-R8FAI4nG1gC4VjFxPQo_zMT35AX46uwJuvJZuvRuovIAbukIG1S5i0u7Rlg.svg');
+  background-repeat: no-repeat;
+  background-size: 100px 30px;
+  width: 100px;
+  height: 30px;
+  margin-top: -4px;
+  margin-right: 0px;
+  vertical-align: -8px;
+}
+.linktree strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://i.esdrop.com/d/f/aswBdVsEn9/CzcNg992v6.png');
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.zezam strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://media.zezam.io/eyJrZXkiOiJId29GcE9WSjJFNnAvcHJvZmlsZS1pbWFnZS9CR1dYeElKVWVRMUkiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MH19fQ==');
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.homepage strong::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://pcr.cloud-mercato.com/static/img/logos/vultr.png');
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.cs ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.tag {
+  display: inline-block;
+  /* border: 1px solid black; */
+  border-radius: 30px;
+  width: 35px;
+  text-align: center;
+  margin-left: 5px;
+  padding: 2px 5px 4px 5px;
+  font-size: 13px;
+}
+.kr {
+  color: white;
+  background-color: #6638b6;
+}
+.en {
+  color: white;
+  background-color: #ec2a23;
+}
+
+.sns ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.sns_box {
+  /* border: 1px solid darkblue; */
+  display: inline-flex;
+  vertical-align: middle;
+}
+.insta {
+  width: 50px;
+  height: 50px;
+  background: #833ab4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+.fb {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  text-align: center;
+  background: #3b5998;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+.li {
+  margin: -5px 5px;
+}
+.li .li_box {
+  width: 100%;
+  margin: 5px;
+}
+.ft_box,
+.li {
+  display: flex;
+  /* border: 1px solid #cccccc; */
+}
+
+.ft_box div {
+  width: 100%;
+}
+
+.ft_box ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.ft_box ul li b {
+  display: inline-flex;
+  vertical-align: middle;
+  font-weight: 500;
+}
+.delivery ul li a {
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  padding: 03px 10px;
+  margin-left: 5px;
+}
+
+.brand ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.brand ul li b {
+  display: inline-flex;
+  vertical-align: middle;
+  font-weight: 500;
+}
+.brand ul li b a {
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  padding: 03px 10px;
+  margin-left: 5px;
+}
+
+.delivery ul li a:hover {
+  transform: scale(1.05);
+  /* background-color: #ececec;
+  color: #000000; */
+}
+
+.brand ul li b a:hover {
+  transform: scale(1.05);
+  /* border: 1px solid #00b6f0;
+  background-color: #00b6f0;
+  color: #ffffff; */
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    overflow: auto;
+  }
+
+  header {
+    /* border: 1px solid darkblue; */
+    height: auto;
+  }
+  .flex_box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    /* border: 1px solid darkgreen; */
+    display: flex-box;
+    width: 60%;
+  }
+  .logo a {
+    display: block;
+    width: 20%;
+    position: absolute;
+    /* border: 1px solid salmon; */
+  }
+  .gab_home {
+    top: 20px;
+    left: 150px;
+  }
+  .unny_shop {
+    top: 80px;
+    left: 150px;
+  }
+
+  .link {
+    /* border: 1px solid #6638B6; */
+    width: 40%;
+  }
+  .link a {
+    /* border: 1px solid salmon; */
+    display: inline-block;
+    border-radius: 10px;
+  }
+  .link .t a {
+    display: block;
+  }
+  .link .tl {
+    display: flex;
+    word-break: keep-all;
+    justify-content: space-between;
+  }
+  .link .tl a {
+    display: block;
+    width: 50%;
+    padding: 17px 0;
+  }
+  .container {
+    display: block;
+    padding: 10px 0;
+    margin-top: 0;
+  }
+  .mt,
+  .dt,
+  .ft,
+  .etc {
+    /* border: 1px solid darkgoldenrod; */
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    /* background-color: #3b5998; */
+  }
+
+  .flex_box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    /* border: 1px solid darkgreen; */
+    display: flex-box;
+  }
+  .logo a {
+    display: block;
+    width: 110px;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    /* border: 1px solid salmon; */
+  }
+  .gab_home {
+    top: 16px;
+    left: 150px;
+  }
+  .unny_shop {
+    top: 77px;
+    left: 150px;
+  }
+
+  .link {
+    /* border: 1px solid #6638B6; */
+    width: 30%;
+  }
+  .link a {
+    /* border: 1px solid salmon; */
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  .link .t a {
+    display: block;
+  }
+  .link .tl {
+    display: flex;
+    word-break: keep-all;
+    justify-content: space-between;
+  }
+  .link .tl a {
+    display: block;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .ft > div > ul {
+    width: auto;
+  }
+  .ft_box {
+    display: block;
+  }
+  .egg {
+    display: none;
+  }
+}
