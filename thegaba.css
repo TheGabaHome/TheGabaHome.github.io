@@ -221,17 +221,11 @@ ul li:hover {
   margin-right: 7px;
   vertical-align: -9px;
 }
-.tiktok strong::before {
-  content: '';
-  display: inline-block;
-  background-image: url('https://i.namu.wiki/i/sGm6zM-xu_y1s5hr14z7G7T-vD-LxOrvWp3viCRLsBcfMvdwa0fOf1ykR2sOugF_kGJqOeL0WZ_-OR2W-zlSExfsNs-R8FAI4nG1gC4VjFxPQo_zMT35AX46uwJuvJZuvRuovIAbukIG1S5i0u7Rlg.svg');
-  background-repeat: no-repeat;
-  background-size: 100px 30px;
-  width: 100px;
-  height: 30px;
-  margin-top: -4px;
-  margin-right: 0px;
-  vertical-align: -8px;
+.tiktok_logo {
+  width: 80px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
 }
 .linktree strong::before {
   content: '';
